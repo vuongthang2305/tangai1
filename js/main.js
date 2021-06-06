@@ -114,6 +114,9 @@ $('#yes').click(function() {
         confirmButtonColor: '#3085d6',
         confirmButtonColor: '#fe8a71',
         confirmButtonText: CONFIG.btnReply
+        ,onClose:() =>{
+            window.location = CONFIG.messLink
+        }
     }).then((result) => {
         if (result.value) {
             Swal.fire({
